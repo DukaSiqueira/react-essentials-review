@@ -21,7 +21,10 @@ function Header() {
   );
 }
 
-function CoreConcept({ image, title, description }) {
+function CoreConcept({
+  image = 'https://via.placeholder.com/150', 
+  title = 'Default Title', 
+  description = 'Default Description'}) {
   return (
     <li>
       <img src={image} alt={title} />
